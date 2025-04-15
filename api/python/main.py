@@ -11,6 +11,21 @@ import tempfile
 import traceback
 from typing import Dict, Any
 from pydantic import BaseModel
+import requests
+from pathlib import Path
+
+def download_model():
+       model_path = Path('clapcap_weights_2023.pth')
+       if not model_path.exists():
+           print("Downloading model...")
+           model_url = os.getenv('MODEL_URL')
+           response = requests.get(model_url)
+           with open(model_path, 'wb') as f:
+               f.write(response.content)
+           print("Model downloaded successfully")
+
+   # Call this before loading the model
+   download_model()
 
 # Configure logging
 logging.basicConfig(
