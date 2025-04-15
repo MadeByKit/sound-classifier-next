@@ -18,7 +18,7 @@ def download_model():
        model_path = Path('clapcap_weights_2023.pth')
        if not model_path.exists():
            print("Downloading model...")
-           model_url = os.getenv('MODEL_URL')
+           model_url = os.getenv('https://github.com/MadeByKit/sound-classifier-next/releases/download/v1.0.0/clapcap_weights_2023.pth')
            response = requests.get(model_url)
            with open(model_path, 'wb') as f:
                f.write(response.content)
