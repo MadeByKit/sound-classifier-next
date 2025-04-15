@@ -4,7 +4,7 @@ python-multipart==0.0.9
 requests
 msclap
 torch
-torchaudio==2.1.0
+torchaudio
 numpy==1.24.3
 librosa==0.10.1
 pydub==0.25.1 
