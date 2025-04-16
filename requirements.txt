@@ -8,3 +8,5 @@ numpy==1.24.3
 soundfile==0.12.1 
 fastapi
 python-multipart
+huggingface_hub[hf_xet]
+hf_xet
