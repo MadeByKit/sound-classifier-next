@@ -172,7 +172,7 @@ else:
 # API Documentation
 st.subheader("API Documentation")
 st.code("""
-Endpoint: http://localhost:8501/api/process-audio
+Endpoint: https://sound-classifier-next3.vercel.app//api/process-audio
 Method: POST
 Content-Type: multipart/form-data
 Body: audio file (wav, mp3, ogg)
