@@ -1,2 +1,0 @@
-NODE_OPTIONS=--max-old-space-size=4096
-MODEL_URL=https://github.com/MadeByKit/sound-classifier-next/releases/download/v1.0.0/clapcap_weights_2023.pth
